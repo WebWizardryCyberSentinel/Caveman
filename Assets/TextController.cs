@@ -58,6 +58,12 @@ public class TextController : MonoBehaviour {
 		
 	}
 
+   /// void switch_State(enum Currentstate,string choice)
+      // {
+      //    
+      //  
+      // }
+
 
     //State methods, used to display the proper message to the screen and used for the actions.
 
@@ -107,7 +113,7 @@ public class TextController : MonoBehaviour {
 
     void state_Murals()
     {
-        text.text = "Placeholder/n/n" +
+        text.text = "Placeholder\n\n" +
                     "Press R to return";
 
         if (Input.GetKeyDown(KeyCode.R))
@@ -127,8 +133,8 @@ public class TextController : MonoBehaviour {
     }
     void state_Cave_W2()
     {
-        text.text = "You can use the spear to hunt and kill" +
-                    " PRess T to Continue your path";
+        text.text = "You can use the spear to hunt and kill\n\n" +
+                    " Press T to Continue your path";
         if (Input.GetKeyDown(KeyCode.T))
         {
             myState = States.Cave2;
@@ -137,7 +143,7 @@ public class TextController : MonoBehaviour {
     }
     void state_Cave_W3()
     {
-        text.text = "Now you've got the stone and the spear. Lets check what else we can do./n/n" +
+        text.text = "Now you've got the stone and the spear. Lets check what else we can do.\n\n" +
                     "Press T to Continue" ;
             if (Input.GetKeyDown(KeyCode.T))
             {
@@ -146,7 +152,7 @@ public class TextController : MonoBehaviour {
     }
     void state_Cave2()
     {
-        text.text = "You've got a weapon, let's see what's beyond that dark passage.../n/n" +
+        text.text = "You've got a weapon, let's see what's beyond that dark passage...\n\n" +
                     "Press T to coninue trough the passage..";
         if (Input.GetKeyDown(KeyCode.T))
         {
@@ -155,7 +161,7 @@ public class TextController : MonoBehaviour {
     }
     void state_Passage0()
     {
-        text.text = "TO be continued. /n/n " +
+        text.text = "TO be continued. \n\n " +
                     "press spacebar to run again.";
         if (Input.GetKeyDown(KeyCode.Space))
         {
